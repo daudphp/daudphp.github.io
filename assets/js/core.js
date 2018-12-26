@@ -143,32 +143,34 @@ $(document).ready(function () {
 
     });
 	
-	$('#button-send').click(function(event){
-		$('#button-send').html('Sending E-Mail...');
-		event.preventDefault();		
-		$.ajax({
-			type: 'POST',
-			url: 'send_form_email.php',
-			data: $('#contact_form').serialize(),
-			success: function(html) {
-				if(html.success == '1')
-				{
-					$('#button-send').html('Send');
-					$('#success').show();
-				}
-				else
-				{
-					$('#button-send').html('Send');
-					$('#error').show();
-				}					
-			},
-			error: function(){
-				$('#button-send').html('Send');
-				$('#error').show();
-			}
-		});
+	// $('#button-send').click(function(event){
+	// 	$('#button-send').html('Sending E-Mail...');
+	// 	event.preventDefault();		
+	// 	$.ajax({
+	// 		type: 'POST',
+	// 		url: 'https://cscdb.000webhostapp.com/send_form_email.php',
+    //         data: $('#contact_form').serialize(),
+    //         crossDomain: true,
+	// 		success: function(html) {
+    //             console.log(html);
+    //             if(html.success == '1')
+	// 			{
+	// 				$('#button-send').html('Send');
+	// 				$('#success').show();
+	// 			}
+	// 			else
+	// 			{
+	// 				$('#button-send').html('Send');
+	// 				$('#error').show();
+	// 			}					
+	// 		},
+	// 		error: function(){
+	// 			$('#button-send').html('Send');
+	// 			$('#error').show();
+	// 		}
+	// 	});
 		
-	});
+	// });
 
 });	
 
