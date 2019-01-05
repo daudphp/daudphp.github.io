@@ -142,6 +142,19 @@ $(document).ready(function () {
         $(this).find(".portfolio-image-wrapper").height(imgHeight);
 
     });
+
+    
+
+    $('#ut-navbar').on('hide.bs.collapse', function () {
+        $('#ha-header').css({
+            'height': '140px'
+        });
+    });
+    $('#ut-navbar').on('show.bs.collapse', function () {
+        $('#ha-header').css({
+            'height':'auto'
+        });
+    });
 	
 	// $('#button-send').click(function(event){
 	// 	$('#button-send').html('Sending E-Mail...');
