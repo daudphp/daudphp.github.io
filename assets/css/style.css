@@ -3201,3 +3201,33 @@ margin-bottom:0px;
 	color: red;
 	display:none;
 }
+.slideTxtBg{
+	border:1px solid #fff; 
+	background: rgb(0, 0, 0, 0.5); 
+	padding-left:15px; 
+	padding-right:15px;
+	font-size: 40px !important;
+	font-family: 'Oswald', sans-serif !important;
+}
+.logoSize{
+	width: 200px; margin-top: -30px;
+}
+
+@media (max-width: 767px) { 
+	.logoSize{
+		width: 100px !important;
+		margin-top: -6px;
+	}
+	.slideTxtBg{
+		border:1px solid #fff; 
+		background: rgb(0, 0, 0, 0.5); 
+		padding-left:15px; 
+		padding-right:15px;
+		padding-top:10px !important; 
+		padding-bottom:10px !important;
+		font-size: 17px !important;
+		font-family: 'Oswald', sans-serif !important;
+		line-height: 25px !important;
+	}
+	
+}
