@@ -1,8 +1,8 @@
 <?php header('Access-Control-Allow-Origin: *'); ?>
 <?php 
 // EDIT THE 2 LINES BELOW AS REQUIRED
-$send_email_to = "manojtiwari271011@yahoo.com";
-$email_subject = "Inquiry submitted through utkarsh computers website.";
+$send_email_to = "XXXXXXXXXXx";
+$email_subject = "Inquiry submitted through website.";
 function send_email($yourName,$inquiryFor,$emailAddress,$mobile,$message)
 {
   global $send_email_to;
